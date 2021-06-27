@@ -1,0 +1,38 @@
+/*formatação global*/
+*{padding: 0;margin: 0;text-decoration: none;box-sizing: border-box;font-family: sans-serif;font-size: 14px;}
+body{width: 100%;min-height: 100vh;background-color: rgb(243, 243, 243);display: flex;justify-content: center;}
+/*container principal e imagem principal*/
+.conteiner{display: flex;align-items: center;justify-content: start;width: 60%;height: 100vh;}
+.imagem_t{display: flex;align-items: center;justify-content: center;width: 50%;}
+.imagem_t img{height: 50rem;}
+/*entradas*/
+.entrada{display: flex;align-items: center;justify-content: space-around;flex-direction: column;width: 50%;min-height: 34rem;}
+.caixas{display: flex;justify-content: space-between;align-items: center;flex-direction: column;background-color: white;width: 100%;padding: 1.3em;border: 1px solid lightgray;}
+.caixas:nth-child(1){min-height: 19rem;}
+.instagram_logo{height: 3rem;}
+.foto_perfil{display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;}
+.foto_perfil img{height: 6rem;}
+.instagram_login{background-color: #0095f6;color: white;padding: 8px;border-radius: 4px;}
+.instagram_logout{color: #0095f6;margin-top: 1rem;}
+.not_acc{color: rgb(160, 160, 160);}
+.link{color: #0095f6;}
+/*botoes de download*/
+.get_app{display: flex;flex-direction:column;align-items: center;justify-content: center;width: 100%;padding: 1.3rem 0;}
+.download{display: flex;width: 100%;justify-content: space-evenly;align-items: center;padding: 1rem;}
+.app_down{height: 3rem;width: 10rem;background-size: cover;}
+.app_down:nth-child(1){background-image: url(imagens/apple-button.png);}
+.app_down:nth-child(2){background-image: url(imagens/googleplay-button.png);}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .conteiner {width: 90%;}
+}
+@media(max-width:650px){
+    body{background-color: rgb(243, 243, 243);}
+    .conteiner{width: 90%;}
+    .imagem_t{display: none;}
+    .entrada{width: 100%;}
+    .caixas{border: 1px solid tr;}
+}
+
